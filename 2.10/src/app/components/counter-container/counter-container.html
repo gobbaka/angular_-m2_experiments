@@ -1,0 +1,5 @@
+<app-counter-display
+  [value]="(store.count$ | async) ?? 0"
+  (increment)="store.increment()"
+  (decrement)="store.decrement()">
+</app-counter-display>
